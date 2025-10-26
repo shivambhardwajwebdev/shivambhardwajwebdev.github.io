@@ -1,0 +1,351 @@
+/* --- Global Styles --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: #ffffff;
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+nav a.active {
+    color: #3498db;
+    border-bottom: 2px solid #3498db;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    background: #333;
+    color: #f4f4f4;
+    margin-top: 3rem;
+}
+
+/* --- Buttons --- */
+.cta-button {
+    display: inline-block;
+    background: #3498db;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #2980b9;
+}
+
+.cta-button.secondary {
+    background: #f4f7f6;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.cta-button.secondary:hover {
+    background: #e9ecef;
+}
+
+/* --- Home Page: Hero Section --- */
+.hero {
+    text-align: center;
+    padding: 5rem 0;
+    background: #ffffff;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.hero .hero-description {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+/* --- Generic Page Content (About, Projects, Contact) --- */
+.page-content {
+    background: #ffffff;
+    padding: 2.5rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.page-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.page-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* --- About Page: Skills --- */
+.skills-title {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+}
+
+.skills-list {
+    display: flex;
+    gap: 30px;
+}
+
+.skills-list h3 {
+    font-size: 1.3rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.skills-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.skills-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #27ae60;
+}
+
+
+/* --- Projects Page: Grid --- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background: #fdfdfd;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.project-card img {
+    width: 100%;
+    display: block;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+}
+
+.project-card p {
+    font-size: 1rem;
+    padding: 0 1.5rem 1rem 1.5rem;
+    margin-bottom: 0;
+}
+
+.project-card .skills-tags {
+    font-size: 0.9rem;
+    color: #555;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.project-links {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Contact Page: Form --- */
+.contact-form {
+    max-width: 700px;
+    margin-top: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    border: none;
+    cursor: pointer;
+}
+
+/* Form Status Messages */
+#form-status {
+    padding: 15px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    font-weight: 500;
+    display: none; /* Hidden by default */
+}
+#form-status.status-success {
+    display: block;
+    background: #e6f7e9;
+    color: #27ae60;
+    border: 1px solid #27ae60;
+}
+#form-status.status-error {
+    display: block;
+    background: #fdeaea;
+    color: #e74c3c;
+    border: 1px solid #e74c3c;
+}
+
+
+/* --- Responsive Design --- */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+    
+    nav ul {
+        display: none; /* Simple hiding for demo. A real toggle needs more JS */
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects on top of each other */
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    header .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 3rem 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .page-content {
+        padding: 1.5rem;
+    }
+
+    .page-content h1 {
+        font-size: 2rem;
+    }
+}
