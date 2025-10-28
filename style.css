@@ -171,7 +171,7 @@ footer {
     width: 100%;
     max-width: 300px;
     height: auto;
-    border-radius: 50%;
+    border-radius: 30%;
     border: 5px solid #ffffff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
@@ -509,3 +509,4 @@ footer {
         text-align: center;
     }
 }
+
