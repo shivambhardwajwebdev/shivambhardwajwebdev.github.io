@@ -3,41 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam Bhardwaj - Web Developer</title>
+    <title>Ritik Sharma - Web Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
         <div class="container">
-            <div class="logo">Shivam Bhardwaj</div>
-            <nav>
+            <a href="index.html" class="logo">Ritik Sharma</a>
+            <nav aria-label="Main Navigation">
                 <ul>
                     <li><a href="index.html" class="active">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+            <!-- Add a menu toggle for mobile (optional, requires JS) -->
+            <!-- <div class="menu-toggle">&#9776;</div> -->
         </div>
     </header>
 
     <main>
         <section class="hero">
             <div class="container">
-                <h1>Hi, I'm Shivam Bhardwaj</h1>
-                <p class="subtitle">B.Tech CSE Student & Web Developer</p>
-                <p class="hero-description">
-                    I build dynamic, responsive websites from scratch. Currently studying at HNB Garhwal University.
-                </p>
-                <a href="projects.html" class="cta-button">View My Work</a>
+                <div class="hero-content">
+                    <div class="text-content">
+                        <h1>Hi, I'm <strong>Ritik Sharma</strong></h1>
+                        <p class="subtitle">Web Developer skilled in HTML, CSS, JavaScript & React</p>
+                        <p class="hero-description">
+                            I build responsive and user-friendly web applications, with a strong foundation in data structures, algorithms, and UI/UX principles.
+                        </p>
+                        <div class="cta-group">
+                            <a href="projects.html" class="cta-button primary">View My Work</a>
+                            <a href="contact.html" class="cta-button secondary">Get In Touch</a>
+                        </div>
+                    </div>
+                    <div class="profile-image-container">
+                        <img src="https://placehold.co/400x400/EBF4FF/76A9EA?text=RS" alt="Ritik Sharma Profile Photo" class="profile-photo">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Shivam Bhardwaj. All rights reserved.</p>
+            <p>&copy; 2025 Ritik Sharma. All rights reserved.</p>
         </div>
     </footer>
 
